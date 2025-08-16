@@ -18,6 +18,14 @@ rustup target add x86_64-unknown-linux-musl
 cargo build --target x86_64-unknown-linux-musl --release
 ```
 
+Rasberry pi/raspbian
+```
+apt install musl musl-dev musl-tools
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup target add aarch64-unknown-linux-musl
+cargo build --target aarch64-unknown-linux-musl --release
+```
+
 # CLI Example
 
 ```
